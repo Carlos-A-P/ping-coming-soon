@@ -17,7 +17,7 @@ function checkInputs(){
        console.log("error")
        //show error
        //add error class with error function
-        setErrorFor(email, 'email cannot be blank');
+        setErrorFor(email, 'Whoops! It looks like you forgot to add your email');
    }  else if(!isEmail(emailValue)){
         setErrorFor(email, 'Please provide a valid email address')
    }  else {
