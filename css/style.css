@@ -1,0 +1,232 @@
+:root {
+	--blue: hsl(223, 87%, 63%);
+	--pBlue: hsl(223, 100%, 88%);
+	--lRed: hsl(354, 100%, 66%);
+	--gray: hsl(0, 0%, 59%);
+	--vdBlue: hsl(209, 33%, 12%);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Libre Franklin", sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+main {
+	padding: 90px 30px;
+}
+
+.wrapper {
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+.content {
+	margin-bottom: 50px;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	width: 50px;
+	margin: auto;
+	margin-bottom: 1.5rem;
+}
+
+h1 {
+	font-weight: 400;
+	color: var(--gray);
+	margin-bottom: 0.7rem;
+	font-size: 20px;
+}
+
+span {
+	font-weight: 800;
+	color: var(--vdBlue);
+}
+
+p.notif {
+	font-size: 0.6rem;
+	margin-bottom: 2rem;
+}
+
+.form {
+	width: 280px;
+	margin: auto;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	border: 1px solid var(--pBlue);
+	border-radius: 50px;
+	height: 35px;
+	width: 280px;
+	padding: 10px 30px;
+	font-size: 0.7rem;
+	margin-bottom: 10px;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 0.6rem;
+	color: var(--pBlue);
+}
+
+small {
+	font-size: 12px;
+	margin-top: -10px;
+	margin-left: 1.4rem;
+	align-self: flex-start;
+	font-style: italic;
+	visibility: hidden;
+	margin-bottom: -4px;
+}
+
+/* changes with javascript */
+
+.form-control.error input {
+	border-color: var(--lRed);
+}
+
+.form-control.success input {
+	border-color: rgb(3, 199, 3);
+}
+
+.form-control.success small {
+	color: rgb(3, 199, 3);
+	margin-bottom: 0.3rem;
+	visibility: visible;
+}
+
+.form-control.error small {
+	color: var(--lRed);
+	margin-bottom: 0.3rem;
+	visibility: visible;
+}
+
+/* end of changes */
+.btn {
+	font-size: 0.6rem;
+	font-weight: 600;
+	background-color: var(--blue);
+	color: white;
+	border-radius: 50px;
+	width: 280px;
+	height: 35px;
+	border: none;
+	box-shadow: 0 3px 10px var(--pBlue);
+}
+
+.btn:hover {
+	background-color: hsl(223, 93%, 73%);
+}
+
+.dashboard img {
+	width: 100%;
+	height: auto;
+}
+
+.dashboard {
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+i {
+	height: 40px;
+	width: 40px;
+	color: var(--blue);
+	border: 1px solid var(--pBlue);
+	padding: 10px;
+	border-radius: 60px;
+}
+
+i:hover {
+	color: white;
+	background-color: var(--blue);
+	border: none;
+}
+
+.twitter {
+	margin: 0 7px;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.ping-CR p {
+	font-size: 0.6rem;
+	color: var(--gray);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	font-size: 11px;
+}
+
+@media (min-width: 750px) {
+	.wrapper {
+		max-width: 500px;
+	}
+
+	.logo {
+		width: 60px;
+		margin-bottom: 1.5rem;
+	}
+
+	h1,
+	span {
+		margin-bottom: 0.7rem;
+		font-size: 35px;
+	}
+
+	.main-text p {
+		font-size: 15px;
+	}
+
+	.form {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.btn {
+		width: 150px;
+		margin-left: 0.7rem;
+	}
+
+	.btn,
+	input {
+		height: 40px;
+	}
+
+	input {
+		padding: 10px 20px;
+	}
+
+	small {
+		margin-left: 20px;
+	}
+}
